@@ -1,5 +1,5 @@
 #include "MNASimulator.h"
-#include "LinearSolver.h"
+#include "Linalg.h"
 #include <cmath>
 #include <stdexcept>
 #include <utility>

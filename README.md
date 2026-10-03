@@ -69,7 +69,7 @@ intentionally out of scope for this version):
 
 ```
 include/     Component.h, Circuit.h, ISimulator.h, MNASimulator.h,
-             IAnalysis.h, DCAnalysis.h, ACAnalysis.h, LinearSolver.h
+             IAnalysis.h, DCAnalysis.h, ACAnalysis.h, Linalg.h
 src/         MNASimulator.cpp, DCAnalysis.cpp, ACAnalysis.cpp, main.cpp
 tests/       test_mna.cpp (assert-based sanity checks)
 docs/        class diagram, design notes
