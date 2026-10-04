@@ -3,6 +3,6 @@
 
 class IAnalysis {
 public:
-    virtual ~IAnalysis() = default;
-    virtual void run(Circuit& ckt) = 0;
+    virtual ~IAnalysis() =default;
+    virtual void run(Circuit& ckt)= 0;
 };
