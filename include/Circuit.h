@@ -23,10 +23,18 @@ public:
     void listComponents() const {
         std::cout << "Circuit: " << numNodes << " nodes (node 0 = ground)\n";
         for (const auto& c : components) {
+            const char* unit = c->getType() == "R" ? "ohms" :
+                               c->getType() == "L" ? "H" :
+                               c->getType() == "C" ? "F" : "V";
             std::cout << "  " << std::left << std::setw(2) << c->getType()
                       << " " << std::setw(6) << c->getName()
                       << " nodes(" << c->getNodeA() << "," << c->getNodeB() << ")"
-                      << "  value=" << c->getValue() << "\n";
+                      << "  value=" << c->getValue() << " " << unit;
+            if (c->getType() == "V") {
+                const auto* source = dynamic_cast<const VoltageSource*>(c.get());
+                std::cout << "  frequency=" << source->getFrequency() << " Hz";
+            }
+            std::cout << "\n";
         }
     }
 

@@ -83,12 +83,15 @@ public:
 
 class VoltageSource : public Component {
     double voltage; 
+    double frequency;
 public:
-    VoltageSource(std::string n, int a, int b, double v): Component(std::move(n), a, b), voltage(v) {}
+    VoltageSource(std::string n, int a, int b, double v, double f = 0.0)
+        : Component(std::move(n), a, b), voltage(v), frequency(f) {}
 
     std::complex<double> getImpedance(double) const override {
         return {0.0, 0.0};   
     }
     double getValue() const override { return voltage; }
     std::string getType() const override { return "V"; }
+    double getFrequency() const { return frequency; }
 };
