@@ -15,7 +15,6 @@ The simulator supports both **DC and AC circuit analysis** and uses matrix-based
 - Support for complex-valued calculations in AC analysis
 - Separate modules for DC and AC analysis
 - Command-line based interface
-- Built using C++17
 
 ## How It Works
 
