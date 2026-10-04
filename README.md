@@ -138,9 +138,9 @@ make clean
 ## Contributors
 
 **Out-of-Bounds — C++ Group Project**
-Aarya IE2025004 - AC and DC analysis, output handling ,testing 
-Aditya BE2025001 - Logic, matrix solving, documentation 
-Bharat BE2025007 - Logic, Forming equations and creating matrix, debugging
-Mayank BE2025018 - Input handling and formatting, menu structure
+-Aarya IE2025004 - AC and DC analysis, output handling ,testing 
+-Aditya BE2025001 - Logic, matrix solving, documentation 
+-Bharat BE2025007 - Logic, Forming equations and creating matrix, debugging
+-Mayank BE2025018 - Input handling and formatting, menu structure
 
 Developed as a collaborative project to implement and understand the fundamentals of circuit simulation and Modified Nodal Analysis.
